@@ -1,38 +1,124 @@
-.App {
+.app{
+  display: flex;
+  flex-direction: column;
+}
+
+.app_body{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3.5rem;
+  background: #000;
+  color: skyblue;
+}
+
+.header h1{
+  font-weight: 500;
+}
+
+.header_menu{
+  font-size: 1.2rem;
+  display: flex;
+  align-items: cen;
+}
+
+.header_menu a{
+  text-decoration: none;
+  color: skyblue;
+  padding: 0px 10px;
+}
+
+.home {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 80%;
+   width: 65%;
+   box-shadow: 0px 2px 8px blue;
+}
+
+.home span{
+  color: red;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+#logoutButton{
+  color: red;
+  letter-spacing: 0px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+
+}
+
+.todoAppParent{
+  /* border: 2px solid blue; */
+  width: 65%;
+  padding: 5px; 
+  box-shadow: 0px 3px 7px blue;
+}
+
+.toShowTask{
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.taskDiv{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px 5px;
+}
+
+.taskDiv button{
+  /* flex: 0.2; */
+  width: 60%;
+}
+
+.col-md-10 {
+  display: flex;
+  width: 100%;
+  /* border: 2px solid blue; */
+}
+
+.col-sm-2{
+  padding: 5px;
+}
+
+.form-group {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome {
   display: flex;
+  width: 100%;
   flex-direction: column;
+  padding: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logoutButton {
+  display: flex;
+  width: inherit;
+  /* border: 2px solid red; */
+  justify-content: flex-end;
 }
