@@ -147,6 +147,6 @@
 
   .btn-danger{
     position: relative;
-    top: -3rem;
+    top: -100%;
   }
 }
